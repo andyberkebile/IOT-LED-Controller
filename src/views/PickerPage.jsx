@@ -9,7 +9,7 @@ class PickerPage extends React.Component {
   componentWillMount() {
     console.log("TEST ME 2")
 
-    ws = new WebSocket("ws://192.168.1.64:3000/update");
+    ws = new WebSocket("wss://iot-led-controller.mybluemix.net/update");
     console.log(ws)
 
     handleChange = function(color, event) {
